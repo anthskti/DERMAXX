@@ -1,0 +1,344 @@
+/* ---------------------------------------------------
+header
+--------------------------------------------------- */
+
+.header-assets {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white; /*#799185*/
+    transition: all 0.5s;
+    font-family: "Playfair Display", sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    /* idk these two */
+    z-index: 997; 
+    padding: 15px 0;
+}
+
+.header-assets.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+.header-assets .logo {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.header-assets .logo a {
+    color: #799185;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.header-assets .logo img {
+    max-height: 40px;
+}
+
+.header-assets .header-scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 12px 0;
+}
+
+.color2 {
+    color: black;
+}
+/* ---------------------------------------------------
+navigation buttons
+--------------------------------------------------- */
+
+
+.left-buttons {
+    position: relative;
+    left: -430px;
+    top: -50px;
+}
+
+.right-buttons {
+    position: relative;
+    left: 400px;
+    top: -106px;
+}
+
+.action-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 20px 20px;
+    color: rgb(241, 242, 246);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------
+navigation bar
+--------------------------------------------------- */
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
+/* list boarder rgb(200, 162, 200)*/ 
+.navbar ul {
+    padding: 0;
+    flex-direction: row;
+    align-items: left;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+  }
+  
+
+/* list content*/
+
+.navbar>ul>li {
+    white-space: nowrap;
+    padding: 0px 0px 0px 30px;
+    list-style-type: none; /*gets rid of the dots*/
+}
+
+.navbar a, 
+.navbar a:focus {
+    display: flex;
+    align-items: center; 
+    color: rgb(121, 145, 133);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    justify-content: space-between;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+}
+
+.navbar a i,
+.nabar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+
+}
+
+/* underlining animation */
+.navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* this makes it highlight after hovering */
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out 0s;
+    
+    
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 10px 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar .dropdown ul li {
+    min-width: 150px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: rgb(114, 36, 36);
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---------------------------------------------------
+preloader what does this do?
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #0078ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+--------------------------------------------------- */
+/* ---------------------------------------------------
+main page 
+--------------------------------------------------- */
+
+.main,
+.sub-main1,
+.sub-main2 {
+    padding-top: 125px;
+    text-align: center;
+    padding-bottom: 250px;
+    font-family: "Cambria", sans-serif;
+    background-color: #f1f2f6;
+}
+
+.main h1,
+.sub-main1 h1,
+.sub-main2 h1 {
+    font-family: 'Playfair Display', sans-serif;
+}
+ /*
+.sub-main1,
+.sub-main2 {
+    text-align: center;
+    padding: 30px;
+    font-family: "Cambria", sans-serif;
+    padding-bottom: 250px;
+    background-color: rgb(241, 242, 246);
+}
+*/
+
+
+/* button link */
+.button a{
+    padding: 10px 12px;
+    position: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 145, 133);
+    text-decoration: none; 
+    transition: all 0.2s ease-in-out 0s;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.button a:hover,
+.button .active,
+.button .active:focus {
+    color: #56695f;
+    background-color: black;
+}
+
+/* ---------------------------------------------------
+footer
+--------------------------------------------------- */
+
+footer{
+    background-color: rgb(121, 145, 133);
+    padding: 15px;
+}
+
+footer h2 {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+footer .footer a {
+    color: white;
+    transition: all 0.2s ease-in-out 0s;
+    text-decoration: none;
+}
+
+footer .footer a:hover {
+    color: rgb(114, 36, 36);
+    
+}
+
+@media only screen and (min-width: 768px) {
+    footer .footer .footer-account {
+        grid-column:3/5;
+        grid-row: 2/2
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    footer .footer .footer-account {
+        grid-column:3/3;
+        grid-row: 1/1
+    }
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+/* ---------------------------------------------------
+routine page
+--------------------------------------------------- */
+.routine-builder {
+    padding-top: 125px;
+    background-color: rgb(241, 242, 246);
+}
+
+.routine-builder .builder {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+} 
