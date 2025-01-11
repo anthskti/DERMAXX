@@ -1,7 +1,8 @@
-/* ---------------------------------------------------
-header
---------------------------------------------------- */
+/* -----------------------------------
+index.html
+----------------------------------- */
 
+/* ---------- Header ---------- */
 .header-assets {
     position: fixed;
     top: 0;
@@ -20,8 +21,7 @@ header
 
 .header-assets.scrolled {
     background-color: rgba(255, 255, 255, 0.8);
-  }
-
+}
 
 .header-assets .logo {
     font-size: 45px;
@@ -50,37 +50,8 @@ header
 .color2 {
     color: black;
 }
-/* ---------------------------------------------------
-navigation buttons
---------------------------------------------------- */
 
-
-.left-buttons {
-    position: relative;
-    left: -430px;
-    top: -50px;
-}
-
-.right-buttons {
-    position: relative;
-    left: 400px;
-    top: -106px;
-}
-
-.action-button {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    padding: 20px 20px;
-    color: rgb(241, 242, 246);
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-}
-
-/* ---------------------------------------------------
-navigation bar
---------------------------------------------------- */
+/* ---------- Navigation Buttons ---------- */
 
 .navbar {
     padding: 0;
@@ -193,6 +164,30 @@ navigation bar
     visibility: visible;
 }
 
+/* ---------- Navigation Buttons ---------- */
+.left-buttons {
+    position: relative;
+    left: -430px;
+    top: -50px;
+}
+
+.right-buttons {
+    position: relative;
+    left: 400px;
+    top: -106px;
+}
+
+.action-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 20px 20px;
+    color: rgb(241, 242, 246);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
 /* ---------------------------------------------------
 preloader what does this do?
 
@@ -230,9 +225,9 @@ preloader what does this do?
     }
 }
 --------------------------------------------------- */
-/* ---------------------------------------------------
-main page 
---------------------------------------------------- */
+
+
+/* ---------- Main Page Formatting ---------- */
 
 .main,
 .sub-main1,
@@ -280,9 +275,7 @@ main page
     background-color: black;
 }
 
-/* ---------------------------------------------------
-footer
---------------------------------------------------- */
+/* ---------- Footer Format ---------- */
 
 footer{
     background-color: rgb(121, 145, 133);
